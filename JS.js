@@ -2,7 +2,7 @@
 var favoriteMovie = prompt("what is your favorite Movie ?");
 while(favoriteMovie != "Fast&Furious" && favoriteMovie !="The Quslizer2" && favoriteMovie != "DORA")
 {
-  favoriteMovie =prompt("what is your favorite Movie ?");
+  favoriteMovie =prompt("choose form tha list  1- Fast&Furious 2- " )
 }
 
 var times = prompt("how many time u need to see it in my page");
