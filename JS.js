@@ -1,26 +1,48 @@
-var favoriteMovie = prompt("what is your favorite movie");
-if (favoriteMovie != null )
+
+var favoriteMovie = prompt("what is your favorite Movie ?");
+while(favoriteMovie != "Fast&Furious" && favoriteMovie !="The Quslizer2" && favoriteMovie != "DORA")
 {
-  if(favoriteMovie=="DORA" || favoriteMovie =="Fast&Furious"||favoriteMovie =="The Quslizer2" ) 
-{
-  var color1 = prompt("enter a color to change somthing");
-  
-  document.getElementById("myH2").style.color = color1;
-  document.getElementById("myH3").style.color= color1;
-  document.getElementById("myH4").style.color = color1;
-  document.write("<h2>"+ favoriteMovie +"<h2>");
-  document.write("<h2>"+ color1 +"<h2>");
-
-  document.getElementsByTagName('p').style.color = color1;
-} else{ 
-  var color1 = prompt("enter a color to change somthing");
-  
-  document.getElementById("myH1").style.color = color1;
-  document.write("<h2>"+ favoriteMovie +"<h2>");
-  document.write("<h2>"+ color1 +"<h2>");
-
-
-  
+  favoriteMovie =prompt("what is your favorite Movie ?");
 }
 
+var times = prompt("how many time u need to see it in my page");
+while(times >10)
+{
+ times = prompt("The number of repetitions allowed for a movie is between 1 and 10, so re-enter the number of repetitions");
 }
+ 
+if (favoriteMovie == "DORA")
+{
+   for(var i =0 ; i<times ; i++)
+   {
+     document.write("<div>"+"<h3 class='clP1'>"+ favoriteMovie +"</h3>"+"<img/src='https://occ-0-2895-2706.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoM7uEXJmW-dhwDYJljHDKGYOz-FWyRDeSZAjFw6XP4dqermIxAQlc10_3idELDlLgomPw2ktpPqEWppYwQJlq9nAs.jpg?r=973'>"+"</div>");
+   }
+   document.write("<p class='clP1'>"+"times "+i+"</p>");
+
+} else if(favoriteMovie == "Fast&Furious") {
+   for(var i =0 ; i<times ; i++)
+   {
+     document.write("<div>"+"<h3 class='clP1'>"+ favoriteMovie +"</h3>"+"<img src='https://occ-0-2895-2706.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQMi0BDgRXkVIOp-fbeeMKrC0kEbOZX-G2OojoTM7BTl6lkCRqN_Ilgl-KSPc42lFCGczx_C_EZ7XlB-ktuq_xyva3s.jpg?r=87c'>"+"</div>");
+   }
+   document.write("<p class='clP1'>"+"times "+i+"</p>");
+
+} else {
+   for(var i =0 ; i<times ; i++)
+   {
+     document.write("<div>"+"<h3 class='clP1'>"+ favoriteMovie +"</h3>"+"<img src='https://occ-0-2895-2706.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABSpB1old9NSiu1wiHBR2x4f4FuLTmBHTzvXVFmTEHBPQEU5BqsKwe0VJdH2Lidq7S_C6S31vdW4bdgufpin9esY1834.jpg?r=cf9' >"+"</div>");
+   }
+   document.write("<p class='clP1'>"+"times "+i+"</p>");
+}
+
+
+
+
+    
+
+  
+  
+  
+     
+  
+
+
