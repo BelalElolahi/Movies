@@ -1,5 +1,9 @@
 
 var favoriteMovie = prompt("what is your favorite Movie ?");
+FavoriteMovie();
+
+function FavoriteMovie()
+{
 while(favoriteMovie != "Fast&Furious" && favoriteMovie !="The Quslizer2" && favoriteMovie != "DORA")
 {
   favoriteMovie =prompt("choose form tha list  1- Fast&Furious 2- " )
@@ -33,6 +37,34 @@ if (favoriteMovie == "DORA")
    }
    document.write("<p class='clP1'>"+"times "+i+"</p>");
 }
+
+}
+
+
+var star = prompt("How many stars for this page ");
+stars(star);
+function stars(number)
+{
+  for( var i =0;i<number;i++)
+  {
+    document.write("<div>"+"<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP3dGmyiQcvk6Q_uayM8xFi1XbjTAEPOdwxyyAW7c3sHRy0H0_fIFaBm8S_gG1zIXcpvk&usqp=CAU'"+"</div>");
+  }
+
+} 
+
+function ChangeCOLOR()
+{
+ var color = prompt("Enter the a color name ");
+  
+  return color;
+}
+
+
+var result= ChangeCOLOR();
+document.getElementById("myH1").style.color = result;
+
+
+
 
 
 
